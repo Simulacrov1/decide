@@ -15,11 +15,8 @@ python manage.py makemigrations
 echo Realizando migrate
 python manage.py migrate
 
-echo Creando superusuario decide@email.com
-python manage.py createsuperuser --email decide@email.com
-
-echo Compilando mensajes de internacionalizacion (i18n)
-django-admin compilemessages
+echo Creando superusuario decide
+python manage.py createsuperuser --email decide
 
 echo FIN
 pause
